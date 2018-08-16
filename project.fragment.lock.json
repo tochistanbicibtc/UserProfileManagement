@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "exports": {
+    "StanbicIBTC.UserMgtProfile.Domain/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/StanbicIBTC.UserMgtProfile.Domain.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/StanbicIBTC.UserMgtProfile.Domain.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/StanbicIBTC.UserMgtProfile.Domain.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "StanbicIBTC.UserMgtProfile.Services/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/StanbicIBTC.UserMgtProfile.Services.dll": {}
+      },
+      "runtime": {
+        "../../ExternalLibraries/EntityFramework.dll": {},
+        "../../ExternalLibraries/Oracle.ManagedDataAccess.dll": {},
+        "bin/Debug/StanbicIBTC.UserMgtProfile.Services.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/StanbicIBTC.UserMgtProfile.Services.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "StanbicIBTC.EntityFramework.Extensions/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/StanbicIBTC.EntityFramework.Extensions.dll": {}
+      },
+      "runtime": {
+        "../packages/EntityFramework.6.0.0/lib/net45/EntityFramework.dll": {},
+        "bin/Debug/StanbicIBTC.EntityFramework.Extensions.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/StanbicIBTC.EntityFramework.Extensions.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "StanbicIBTC.UserMgtProfile.Data/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/StanbicIBTC.UserMgtProfile.Data.dll": {}
+      },
+      "runtime": {
+        "../../ExternalLibraries/EntityFramework.dll": {},
+        "../../ExternalLibraries/Oracle.ManagedDataAccess.EntityFramework.dll": {},
+        "../../ExternalLibraries/Oracle.ManagedDataAccess.dll": {},
+        "bin/Debug/StanbicIBTC.UserMgtProfile.Data.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/StanbicIBTC.UserMgtProfile.Data.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}
