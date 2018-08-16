@@ -83,10 +83,14 @@ namespace StanbicIBTC.UserMgtProfile.WebAPI
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    ValidIssuer = "http://localhost:5000",
-                    ValidAudience = "http://localhost:5000",
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SecurityKey"]))
+                    ValidIssuer = Configuration["Jwt:Issuer"],
+                    ValidAudience = Configuration["Jwt:Issuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                 };
+                //ValidIssuer = "http://localhost:5000",
+                //    ValidAudience = "http://localhost:5000",
+                //    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SecurityKey"]))
+                //};
                 options.Events = new JwtBearerEvents()
                 {
                     OnTokenValidated = (ctx) =>

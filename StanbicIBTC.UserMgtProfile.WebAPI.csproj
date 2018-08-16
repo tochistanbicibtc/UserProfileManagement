@@ -14,8 +14,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\Auth.cs" />
     <Compile Remove="Controllers\CustomProfileController.cs" />
-    <Compile Remove="Controllers\TokenController.cs" />
   </ItemGroup>
 
   <ItemGroup>
